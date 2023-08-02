@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!-- Indica que estamos trabalhando em HTML5 -->
+<html lang="pt-BR"> <!-- Abertura da TAG HTML -->
+
+<head> <!-- Abertura do Cabeçalho -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1 - Estrutura do HTML</title>
+</head> <!-- Fechamento do Cabeçalho -->
+
+<!-- Style = CSS dentro do documento HTML -->
+<style>
+    #titulo {
+        color: red;
+    }
+
+    /* (id) titulo está ligada diretamente a tag (h1); use (#) para se referir a uma (id) no CSS*/
+
+    .fundo-verde {
+
+        background-color: rgb(3, 255, 24);
+    }
+
+    /* (class) fundo-verde está ligada diretamente a tag (p); use (.) para se referir a uma (class) no CSS*/
+</style>
+
+<body> <!-- Abertura da TAG corpo -->
+
+    <h1 id="titulo"> Primeiro HTML </h1>
+    <!-- (h1) = Título; (id) = identificação -->
+    <!-- o id é único e não pode ser repetido-->
+
+    <hr> <!--(hr) linha horizontal-->
+
+    <p> Teste de texto </p><br>
+    <!-- (p) = Parágrafo; (br) = Quebra de linha -->
+    <p class="fundo-verde"> Teste de <b>texto 2</b></p> <!-- (b) negrito -->
+    <!-- A tag class pode se repetir -->
+
+</body> <!-- Fechamento da TAG corpo -->
+
+</html> <!-- Fechamento da TAG HTML -->

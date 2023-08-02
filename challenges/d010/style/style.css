@@ -1,0 +1,255 @@
+/*Rules*/
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fonts/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+/*O código seguinte foi utilizado para definir um degradê -> "background-image: linear-gradient"*/
+
+:root {
+    /*Variables*/
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --default-font: Arial, Helvetica, sans-serif;
+    --featured-font: 'Bebas Neue', sans-serif;
+    --android-font: 'Android', Cursive;
+}
+
+* {
+    /*Box model stuff*/
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /*Box model stuff*/
+    background-color: var(--cor0);
+    /*Typography stuff*/
+    font-family: var(--default-font);
+}
+
+a.external::after {
+    /*Display stuff*/
+    content: '\00A0\1F517';
+}
+
+header {
+    /*Box model stuff*/
+    min-height: 150px;
+    padding-top: 40px;
+    background-color: var(--cor4);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    /*Typography stuff*/
+    text-align: center;
+}
+
+header>h1 {
+    /*Box model stuff*/
+    margin-bottom: 20px;
+    /*Typography stuff*/
+    font-family: var(--featured-font);
+    font-size: 3em;
+    font-weight: normal;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.397);
+    color: white;
+}
+
+header>p {
+    /*Box model stuff*/
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*Typography stuff*/
+    font-family: var(--default-font);
+    font-size: 1.2em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.397);
+    color: white;
+}
+
+nav {
+    /*Box model stuff*/
+    padding: 10px;
+    background-color: var(--cor5);
+    /*Miscellaneous*/
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.445);
+}
+
+nav>a {
+    /*Box model stuff*/
+    padding: 10px;
+    border-radius: 5px;
+    /*Typography stuff*/
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor1);
+    /*Manipulations stuff*/
+    transition-duration: 0.5s;
+}
+
+nav>a:hover {
+    /*Box model stuff*/
+    background-color: var(--cor3);
+    /*Typography stuff*/
+    color: var(--cor5);
+
+}
+
+main {
+    /*Box model stuff*/
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    /*Miscellaneous*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
+}
+
+main p {
+    /*Box model stuff*/
+    margin: 15px 0px;
+    /*Typography stuff*/
+    font-size: 1em;
+    text-align: justify;
+    text-indent: 30px;
+    /*Miscellaneous*/
+    line-height: 2em;
+}
+
+main strong {
+    /*Typography stuff*/
+    font-weight: bold;
+    color: var(--cor4);
+}
+
+main a {
+    /*Box model stuff*/
+    padding: 2px 6px;
+    background-color: var(--cor1);
+    /*Typography stuff*/
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor5);
+}
+
+main a:hover {
+    /*Typography stuff*/
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+article>h1 {
+    /*Typography stuff*/
+    font-family: var(--android-font);
+    font-size: 1.8em;
+    font-weight: normal;
+    color: var(--cor5);
+}
+
+article>h2 {
+    /*Box model stuff*/
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    /*Typography stuff*/
+    font-family: var(--android-font);
+    font-size: 1.3em;
+    font-weight: normal;
+    text-indent: 8px;
+    color: var(--cor4);
+}
+
+img {
+    /*Box model stuff*/
+    width: 100%;
+}
+
+.small {
+    /*Display stuff*/
+    display: block;
+    /*Box model stuff*/
+    max-width: 350px;
+    margin: auto;
+}
+
+.video {
+    /*Positioning stuff*/
+    position: relative;
+    /*Box model stuff*/
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    background-color: var(--cor5);
+}
+
+.video>iframe {
+    /*Positioning stuff*/
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    /*Box model stuff*/
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    /*Box model stuff*/
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--cor1);
+    /*Miscellaneous*/
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.349);
+}
+
+aside>h3 {
+    /*Box model stuff*/
+    margin: -10px -10px 0px -10px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: var(--cor4);
+    /*Typography stuff*/
+    color: white;
+}
+
+aside>ul {
+    /*Miscellaneous*/
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer {
+    /*Box model stuff*/
+    padding: 5px;
+    background-color: var(--cor5);
+    /*Typography stuff*/
+    font-size: 0.8em;
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    /*Typography stuff*/
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    /*Typography stuff*/
+    text-decoration: underline;
+    color: var(--cor1);
+}

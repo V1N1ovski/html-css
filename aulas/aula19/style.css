@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*
+    em HTML é (id) = em CSS é (#) (só pode um elemento)
+    em HTML é (class) = em CSS é (.) (pode vários elementos)
+
+    Esses comentários fornecem uma explicação sobre as diferenças de sintaxe entre seletores de ID e seletores de classe em HTML e CSS, destacando que em HTML usamos id e em CSS usamos '#' para selecionar elementos por ID, e em HTML usamos class e em CSS usamos '.' para selecionar elementos por classe. Isso é útil para entender como os seletores são interpretados em diferentes contextos.
+*/
+
+body {
+    background-color: #7AB8BF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #025159;
+}
+
+/* 
+    "Caso não queira, não é necessário colocar o h1 na frente do #title"
+    
+    Esse comentário sugere que, para o seletor 'h1#title', o seletor h1 pode ser omitido, pois o ID '#title' já é exclusivo o suficiente para selecionar o elemento desejado. É uma dica útil para economizar código, pois o seletor 'h1#title' é mais específico do que apenas '#title'.
+*/
+
+h1#title {
+    text-align: center;
+    color: #A67458;
+    background-color: #025159;
+}
+
+h2 {
+    color: #3F858C;
+}
+
+.basico {
+    color: #3F858C;
+}
+
+.intermediario {
+    color: #878c3f;
+}
+
+.avancado {
+    color: #8c3f3f;    
+}
+
+.destaque {
+    background-color: #83834977;
+}

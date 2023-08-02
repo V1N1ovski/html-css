@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+
+<body>
+
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+
+    <!-- Um atalho legal pra criar varias tags iguais com uma digitação e o "*" 
+    Um exemplo as <li> voce digita li*7 por exemplo e serão criadas 7 <li> quando der o enter.
+    Dica valida para todos os codigos -->
+
+    <ol type="1" start="1"> <!-- TYPE é o tipo da lista | Start é onde a lista vai começar -->
+        <li>Acordar</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar café</li>
+        <li>Estudar</li>
+        <li>Jogar</li>
+    </ol>
+
+    <h2>Listas não ordenadas</h2>
+
+    <ul type="disc"> <!-- disc | circle | square -->
+        <li>pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+    </ul>
+
+    <h2>Minhas Linguagens favoritas</h2> <!-- Juntando listas versão 1.0 -->
+
+    <ol>
+        <li>Antigas</li>
+        <ol type="I">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+
+        <li>Novas</li>
+        <ol type="I">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+
+    <!-- Juntando listas ordenadas e listas não ordenadas -->
+
+    <h2> Meus jogos favoritos </h2>
+    <ol>
+        <li>XBOX</li>
+        <ul type="square">
+            <li>Gears of War</li>
+            <ul type="circle">
+                <li>Gears of War 2</li>
+                <li>Gears of War 3</li>
+            </ul>
+            <li>Halo</li>
+        </ul>
+
+        <li>PC</li>
+        <ul type="square">
+            <li>Astroneer</li>
+            <li>Mad Games Tycoon</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+
+</body>
+
+</html>

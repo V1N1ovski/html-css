@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+
+    <h1>Imagem dinâmica</h1>
+
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu
+        navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png">
+        <img src="images/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <!-- Explicação do código no to write -->
+
+    <!-- Por padrão o source media te sugere a largura minima "min-width:" não esqueça de mudar para "max-width" -->
+
+    <!-- Esse código permite que diferentes versões da imagem sejam carregadas com base no tamanho da tela do dispositivo, garantindo uma melhor experiência de visualização para os usuários em diferentes dispositivos. -->
+
+    <h1>Reproduzindo áudio</h1>
+
+    <!-- Reproduzindo áudio - modo 1 -->
+
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="audios/jingle-bells.mp3" controls></audio>
+
+    <br>
+
+    <!-- Reproduzindo áudio - modo 2 -->
+
+    <audio preload="metadata" controls loop>
+        <source src="audios/jingle-bells.mp3" type="audio/mpeg">
+        <source src="audios/jingle-bells.ogg" type="audio/ogg">
+        <source src="audios/jingle-bells.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="audios/jingle-bells.mp3"> Clique aqui para
+                baixar o arquivo</a></p>
+    </audio>
+
+    <!-- Explicação do código no to write -->
+
+</body>
+
+</html>
