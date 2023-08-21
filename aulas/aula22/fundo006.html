@@ -9,17 +9,23 @@
     <style>
         body {
             height: 100vh;
-            background-color: #000;
+
+            /*background-color: #000;
             background-image: url('images/wallpaper002.jpg');
-            background-position: center top;
+            background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
-            background-attachment: fixed;
+            background-attachment: fixed;*/
+
+            /* Shorthand - background
+            color > image > position > repeat > [size] > attachment */
+
+            background: #000 url('images/wallpaper002.jpg') center center / cover no-repeat fixed;
         }
 
         main {
             background-color: #fff;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid #00008b;
