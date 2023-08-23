@@ -1,1 +1,84 @@
 @charset "UTF-8";
+
+* {
+    /*Box model stuff*/
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    /*Box model stuff*/
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    /*Box model stuff*/
+    background-color: black;
+    /*Typography stuff*/
+    text-align: center;
+    color: white;
+}
+
+header>h1 {
+    /*Box model stuff*/
+    padding-top: 50px;
+    /*Typography stuff*/
+    font-variant: small-caps;
+}
+
+header>p {
+    /*Box model stuff*/
+    padding-bottom: 50px;
+}
+
+a {
+    /*Typography stuff*/
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    /*Typography stuff*/
+    text-decoration: underline;
+}
+
+section {
+    /*Box model stuff*/
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    padding-top: 10vh;
+    /*Miscellaneous*/
+    line-height: 2em;
+}
+
+.normal {
+    /*Box model stuff*/
+    background-color: white;
+    /*Typography stuff*/
+    color: black;
+}
+
+.imagem {
+    /*Box model stuff*/
+    background-color: #464646;
+    /*Typography stuff*/
+    color: white;
+}
+
+.imagem>p {
+    /*Box model stuff*/
+    width: 400px;
+    background-color: #00000041;
+}
+
+footer {
+    /*Box model stuff*/
+    padding: 10px;
+    background-color: black;
+    /*Typography stuff*/
+    text-align: center;
+    color: white;
+}
