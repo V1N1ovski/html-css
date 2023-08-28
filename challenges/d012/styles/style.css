@@ -1,9 +1,21 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
 * {
     /*Box model stuff*/
     margin: 0px;
     padding: 0px;
+    /*Typography stuff*/
+    font-size: 1em;
 }
 
 html,
@@ -11,6 +23,7 @@ body {
     /*Box model stuff*/
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -25,6 +38,8 @@ header>h1 {
     /*Box model stuff*/
     padding-top: 50px;
     /*Typography stuff*/
+    font-family: var(--fonte2);
+    font-size: 10vw;
     font-variant: small-caps;
 }
 
@@ -50,6 +65,9 @@ section {
     padding-bottom: 10vh;
     padding-left: 30px;
     padding-top: 10vh;
+    /*Typography stuff*/
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
     /*Miscellaneous*/
     line-height: 2em;
 }
@@ -69,8 +87,10 @@ section {
 }
 
 .imagem>p {
+    /*Display stuff*/
+    display: inline-block;
     /*Box model stuff*/
-    width: 400px;
+    padding: 5px;
     background-color: #00000041;
 }
 
