@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .esquerda {
+            text-align: left;
+        }
+
+        .cor {
+            color: white;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr> <!-- Cabeçalho | Linha -->
+                <th class="cor" rowspan="2" scope="col">Área</th>
+                <th class="cor" rowspan="2" scope="col">Diciplinas</th>
+                <th class="cor" colspan="2" scope="colgroup">Notas</th>
+                <th class="cor" rowspan="2" scope="col">Média</th>
+            <tr>
+                <th class="cor" scope="col">Nota 1</th>
+                <th class="cor" scope="col">Nota 2</th>
+            </tr>
+            </tr>
+        </thead>
+        <tbody> <!-- Corpo -->
+            <tr> <!-- Primeira Linha -->
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr> <!-- Segunda Linha -->
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr> <!-- Terceira Linha -->
+                <td>Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr> <!-- Quarta Linha -->
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr> <!-- Quinta Linha -->
+                <th class="esquerda cor" colspan="4" scope="row">Média de Exatas</th>
+                <td class="cor">0.0</td>
+            </tr>
+            <tr> <!-- Sexta Linha -->
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr> <!-- Sétima Linha -->
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr> <!-- Oitava Linha -->
+                <th class="esquerda cor" colspan="4" scope="row">Média de Humanas</th>
+                <td class="cor">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
