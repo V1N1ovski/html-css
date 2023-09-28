@@ -1,20 +1,57 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML -->
+<html lang="pt-BR"> <!-- Elemento raiz do documento HTML com a definição do idioma como português do Brasil -->
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 para suportar caracteres especiais -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <!-- Configuração de metadados para a exibição em dispositivos móveis -->
+    <title>Formulário</title> <!-- Define o título da página exibido na aba do navegador -->
 </head>
 
 <body>
-    <h1>Exemplo de Formulário</h1>
-    <form action="cadastro.php" method="get">
-        <p>
-            <label for="iemail"></label>
-        </p>
+    <h1>Exemplo de Formulário</h1> <!-- Título de nível 1 (maior) exibido na página -->
 
-    </form>
+    <!-- Início do formulário -->
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <!-- 'action' define para onde os dados do formulário serão enviados quando enviado.
+             'method' define o método de envio, neste caso, usando 'get' (também pode ser 'post').
+             'autocomplete' habilita o preenchimento automático de campos de formulário pelos navegadores. -->
+
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <!-- 'fieldset' cria um grupo de campos relacionados no formulário.
+                 'legend' fornece um título descritivo para o grupo de campos. -->
+
+            <p>
+                <label for="inome">Nome</label>
+                <!-- 'label' cria um rótulo descritivo para um campo de entrada.
+                     'for' atribui o rótulo ao campo de entrada com o mesmo 'id'. -->
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+                <!-- 'input' define um campo de entrada de texto.
+                     'type' define o tipo de entrada (neste caso, texto).
+                     'name' atribui um nome ao campo que será usado para identificar os dados.
+                     'id' fornece um identificador único para o campo.
+                     'minlength' e 'maxlength' definem o tamanho mínimo e máximo do texto.
+                     'required' torna o campo obrigatório. -->
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+                <!-- Campo de entrada de email com validação automática do formato de email. -->
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$" required>
+                <!-- Campo de entrada de telefone com validação usando uma expressão regular ('pattern'). -->
+                <!-- Pesquisar sobre RegEx -->
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar"> <!-- Botão de envio do formulário -->
+            <input type="reset" value="Limpar"> <!-- Botão para limpar os campos do formulário -->
+        </p>
+    </form> <!-- Fim do formulário -->
 </body>
 
 </html>
