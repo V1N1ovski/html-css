@@ -5,38 +5,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+
+    <!-- Estilos CSS internos -->
+    <style>
+        /* Estilo para o formulário */
+        form {
+            width: 300px;
+            margin: 0 auto;
+            /* Centraliza o formulário horizontalmente na página */
+        }
+
+        /* Estilo para os parágrafos dentro do formulário */
+        form p {
+            margin: 10px 0;
+            /* Espaçamento entre os parágrafos */
+        }
+
+        /* Estilo para os rótulos (labels) dos campos de entrada */
+        form label {
+            display: block;
+            /* Exibe os rótulos em uma nova linha */
+            margin-bottom: 5px;
+            /* Espaçamento inferior dos rótulos */
+        }
+
+        /* Estilo para campos de entrada de texto, número, mês, data e hora */
+        form input[type="text"],
+        form input[type="number"],
+        form input[type="month"],
+        form input[type="date"],
+        form input[type="time"] {
+            width: 100%;
+            /* Preenche a largura do container pai (o formulário) */
+            padding: 5px;
+            /* Espaçamento interno dos campos de entrada */
+            border: 1px solid #ccc;
+            /* Borda fina ao redor dos campos */
+        }
+
+        /* Estilo para botões de envio e de limpeza */
+        form input[type="submit"],
+        form input[type="reset"] {
+            padding: 5px 10px;
+            /* Espaçamento interno dos botões */
+            background-color: #007BFF;
+            /* Cor de fundo azul */
+            border: none;
+            /* Remove a borda dos botões */
+            color: white;
+            /* Cor do texto dos botões */
+            cursor: pointer;
+            /* Altera o cursor ao passar o mouse sobre os botões */
+        }
+    </style>
 </head>
 
 <body>
     <h1>Teste de Formulário</h1>
 
+    <!-- Início do formulário -->
     <form action="cadastro.php" method="get">
+        <!-- Parágrafo e rótulo para o campo "Nome" -->
         <p>
             <label for="inome">Nome</label>
+            <!-- Campo de entrada de texto para o nome -->
             <input type="text" name="nome" id="inome" maxlength="30" placeholder="Nome completo" autocomplete="name"
                 required>
         </p>
+
+        <!-- Parágrafo e rótulo para o campo "Média" -->
         <p>
             <label for="imedia">Média</label>
+            <!-- Campo de entrada numérica para a média -->
             <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5" required>
         </p>
+
+        <!-- Parágrafo e rótulo para o campo "Período Letivo" -->
         <p>
             <label for="imes">Período Letivo</label>
+            <!-- Campo de entrada de mês -->
             <input type="month" name="mes" id="imes" value="2023-09" required>
         </p>
+
+        <!-- Parágrafo e rótulo para o campo "Dia da Prova" -->
         <p>
             <label for="idia">Dia da Prova</label>
+            <!-- Campo de entrada de data -->
             <input type="date" name="dia" id="idia" value="2023-09-27" required>
         </p>
+
+        <!-- Parágrafo e rótulo para o campo "Horário da prova" -->
         <p>
             <label for="ihora">Horário da prova</label>
+            <!-- Campo de entrada de hora -->
             <input type="time" name="hora" id="ihora" required>
         </p>
+
+        <!-- Parágrafo com botões de envio e limpeza -->
         <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar"> <!-- Botão de envio -->
+            <input type="reset" value="Limpar"> <!-- Botão de limpeza -->
         </p>
     </form>
+    <!-- Fim do formulário -->
 </body>
 
 </html>
