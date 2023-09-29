@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8"> <!-- Definindo a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configurando a escala inicial para dispositivos móveis -->
+    <title>Formulário</title> <!-- Título da página exibido na guia do navegador -->
+</head>
+
+<body>
+    <h1>Exemplo de Formulário</h1> <!-- Cabeçalho principal da página -->
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!-- Formulário começa aqui com os seguintes atributos:
+             - action: Define o arquivo para o qual os dados do formulário serão enviados após o envio.
+             - method: Define o método de envio (neste caso, POST).
+             - autocomplete: Habilita o preenchimento automático de formulários pelo navegador. -->
+
+        <p>
+            <label for="iest">Estado</label> <!-- Rótulo do campo de seleção -->
+            <select name="estado" id="iest">
+                <!-- Campo de seleção (dropdown) com um identificador (id) e um nome (name) para referência e envio do valor selecionado -->
+                <option value="" selected>--- Escolha ---</option>
+                <!-- Opção padrão com valor vazio e marcada como selecionada -->
+                <optgroup label="Região Sudeste"> <!-- Agrupamento de opções -->
+                    <option value="MG">Minas Gerais</option> <!-- Opção do dropdown com valor e texto -->
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão: </label> <!-- Rótulo do campo de texto -->
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <!-- Campo de texto com um identificador (id), um nome (name) e uma lista de opções associada -->
+            <datalist id="lstprof">
+                <!-- Lista de opções para o campo de texto -->
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label> <!-- Rótulo do campo de texto multi-linhas -->
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem..."></textarea>
+            <!-- Campo de texto multi-linhas com um identificador (id), um nome (name), número de colunas e linhas, e um texto de exemplo (placeholder) -->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar"> <!-- Botão de envio do formulário -->
+            <input type="reset" value="Limpar"> <!-- Botão para limpar o formulário -->
+        </p>
+    </form>
+</body>
+
+</html>
