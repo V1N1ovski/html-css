@@ -1,37 +1,59 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML -->
+<html lang="pt-BR"> <!-- Abertura da tag HTML com a especificação de linguagem (português do Brasil) -->
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- Definição do conjunto de caracteres UTF-8 para suportar caracteres especiais -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <!-- Configuração da viewport para dispositivos móveis -->
+    <title>Formulário</title> <!-- Título da página exibido na aba do navegador -->
 </head>
 
-<body>
-    <h1>Exemplo de Formulário</h1>
+<body> <!-- Abertura do corpo da página -->
+
+    <h1>Exemplo de Formulário</h1> <!-- Título principal da página -->
+
     <form action="cadastro.php" method="get" autocomplete="on">
+        <!-- Abertura do formulário com especificações:
+             - "action" define o arquivo para onde os dados do formulário serão enviados (cadastro.php neste caso).
+             - "method" define o método HTTP a ser usado para enviar os dados (GET neste caso).
+             - "autocomplete" habilita o preenchimento automático de campos do formulário. -->
+
         <p>
             <label for="in1">Número 1: </label>
+            <!-- Rótulo (label) para o primeiro campo de entrada (input). O "for" está relacionado ao ID do input. -->
             <input type="number" name="n1" id="in1" min="0" max="50" required
                 oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            <!-- Campo de entrada (input) para o primeiro número:
+                 - "type" define o tipo de entrada como número.
+                 - "name" define o nome do campo que será usado para enviar os dados.
+                 - "id" define um identificador único para o campo.
+                 - "min" e "max" definem os valores mínimo e máximo permitidos.
+                 - "required" indica que o campo é obrigatório.
+                 - "oninput" define um evento JavaScript que calcula a soma de n1 e n2 e exibe o resultado na saída (output) isoma. -->
         </p>
 
         <p>
             <label for="in2">Número 2:</label>
             <input type="number" name="n2" id="in2" min="0" max="50" required
                 oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            <!-- Campo de entrada (input) para o segundo número, semelhante ao primeiro. -->
         </p>
 
         <p>
             <label for="isoma">Soma: </label>
+            <!-- Rótulo (label) para a saída (output) da soma. -->
             <output name="soma" id="isoma">0</output>
+            <!-- Saída (output) para exibir o resultado da soma. O valor inicial é 0. -->
         </p>
 
         <p>
             <input type="submit" value="Enviar">
+            <!-- Botão de envio do formulário -->
             <input type="reset" value="Limpar">
+            <!-- Botão para limpar os campos do formulário -->
         </p>
-    </form>
-</body>
+    </form> <!-- Fechamento do formulário -->
 
-</html>
+</body> <!-- Fechamento do corpo da página -->
+
+</html> <!-- Fechamento da tag HTML -->
