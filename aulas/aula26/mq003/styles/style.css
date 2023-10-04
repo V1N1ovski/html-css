@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* All */
+* {
+    /*Box model stuff*/
+    margin: 0px;
+    padding: 0px;
+    /*Typography stuff*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    /*Box model stuff*/
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+h1 {
+    /*Box model stuff*/
+    padding: 10px;
+    /*Typography stuff*/
+    text-align: 2px 2px 0px #1526a7;
+    color: white;
+}
+
+/* Portrait */
+@media screen and (orientation: portrait) {
+    body {
+        background-image: url('../images/cev-portrait.jpg');
+        background-position: center bottom;
+    }
+}
+
+/* Landscape */
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url('../images/cev-landscape.jpg');
+        background-position: left bottom;
+    }
+}
