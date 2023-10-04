@@ -1,3 +1,9 @@
 @charset "UTF-8";
 
 /* Landscape */
+
+body {
+    /*Box model stuff*/
+    background-image: url('../images/cev-landscape.jpg');
+    background-position: left bottom;
+}

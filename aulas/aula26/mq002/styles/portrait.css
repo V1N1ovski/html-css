@@ -1,3 +1,9 @@
 @charset "UTF-8";
 
 /* Portrait */
+
+body {
+    /*Box model stuff*/
+    background-image: url('../images/cev-portrait.jpg');
+    background-position: center bottom;
+}

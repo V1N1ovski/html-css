@@ -1,3 +1,29 @@
 @charset "UTF-8";
 
 /* General Settings */
+
+* {
+    /*Box model stuff*/
+    margin: 0px;
+    padding: 0px;
+    /*Typography stuff*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    /*Box model stuff*/
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+h1 {
+    /*Box model stuff*/
+    padding: 10px;
+    /*Typography stuff*/
+    text-align: 2px 2px 0px #1526a7;
+    color: white;
+}
