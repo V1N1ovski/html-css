@@ -1,6 +1,78 @@
 @charset "UTF-8";
 
+* {
+    /*Box model stuff*/
+    margin: 0px;
+    padding: 0px;
+    /*Typography stuff*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body,
 html {
-    background-color: lightblue;
+    /*Box model stuff*/
+    background-color: lightgray;
+}
+
+header {
+    /*Box model stuff*/
+    background-color: rgb(148, 148, 148);
+}
+
+header>h1 {
+    /*Box model stuff*/
+    padding: 10px;
+    /*Typography stuff*/
+    text-align: center;
+}
+
+menu {
+    /*Display stuff*/
+    display: block;
+}
+
+menu>ul {
+    /*Miscellaneous*/
+    list-style-type: none;
+}
+
+menu>ul>li>a {
+    /*Display stuff*/
+    display: block;
+    /*Box model stuff*/
+    padding: 10px;
+    border-top: 2px solid gray;
+    background-color: rgb(87, 87, 87);
+    /*Typography stuff*/
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+menu>ul>li>a:hover {
+    /*Box model stuff*/
+    background-color: gray;
+}
+
+main {
+    /*Box model stuff*/
+    width: 90vw;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+article>h2 {
+    /*Box model stuff*/
+    padding-bottom: 20px;
+}
+
+article>p {
+    /*Box model stuff*/
+    margin-bottom: 20px;
+    /*Typography stuff*/
+    text-align: justify;
+    text-indent: 20px;
 }
