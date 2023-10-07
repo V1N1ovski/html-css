@@ -26,9 +26,29 @@ header>h1 {
     text-align: center;
 }
 
-menu {
+span#burguer {
     /*Display stuff*/
     display: block;
+    /*Box model stuff*/
+    padding: 10px;
+    background-color: rgb(48, 48, 48);
+    /*Typography stuff*/
+    text-align: center;
+    color: white;
+    /*Miscellaneous*/
+    cursor: pointer;
+}
+
+span#burguer:hover {
+    /*Box model stuff*/
+    background-color: white;
+    /*Typography stuff*/
+    color: black;
+}
+
+menu {
+    /*Display stuff*/
+    display: none;
 }
 
 menu>ul {
