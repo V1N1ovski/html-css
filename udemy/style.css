@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    /*Box model stuff*/
+    margin: 0;
+    padding: 0;
+    /*Miscellaneous*/
+    box-sizing: border-box;
+}
+
+div.flex-container {
+    /*Display stuff*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /*Box model stuff*/
+    height: 500px;
+    background-color: yellow;
+}
+
+div.flex-item {
+    /*Box model stuff*/
+    margin: 10px;
+    background: red;
+    /*Typography stuff*/
+    color: white;
+}
+
+div.flex-item:nth-child(3) {
+    /*Typography stuff*/
+    font-size: 40px;
+}
