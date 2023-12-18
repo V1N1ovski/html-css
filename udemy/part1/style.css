@@ -11,23 +11,24 @@
 div.flex-container {
     /*Display stuff*/
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
     /*Box model stuff*/
-    height: 500px;
-    background-color: yellow;
+    height: 640px;
+    background: yellow;
 }
 
 div.flex-item {
     /*Box model stuff*/
-    margin: 10px;
+    width: 33.33%;
     background: red;
     /*Typography stuff*/
     color: white;
 }
 
+/* 
 div.flex-item:nth-child(3) {
-    /*Typography stuff*/
     font-size: 40px;
-}
+} 
+*/
