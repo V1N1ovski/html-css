@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+    /*Box model stuff*/
+    margin: 0;
+    padding: 0;
+    /*Miscellaneous*/
+    box-sizing: border-box;
+}
+
+div.flex-container {
+    /*Display stuff*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    /*Box model stuff*/
+    background-color: yellow;
+}
+
+div.flex-item {
+    /*Display stuff*/
+    flex: 1 1 320px;
+    /*Box model stuff*/
+    height: 200px;
+    border: 1px solid black;
+    background: red;
+    /*Typography stuff*/
+    color: white;
+}
+
+/*
+    flex-basis: Define o tamanho inicial do item flexível ao longo do eixo principal antes que o espaço restante seja distribuído. Pode ser definido como um valor fixo, porcentagem ou auto.
+
+    flex-grow: Especifica a capacidade de um item flexível crescer em relação aos outros itens flexíveis quando há espaço extra disponível ao longo do eixo principal. É um valor adimensional. Quanto maior o valor, mais o item crescerá em relação aos outros.
+
+    flex-shrink: Indica a capacidade de um item flexível encolher em relação aos outros itens flexíveis quando não há espaço suficiente ao longo do eixo principal. Assim como flex-grow, é um valor adimensional. Quanto maior o valor, mais o item encolherá em relação aos outros.
+
+    flex-basis: Define o tamanho inicial.
+    flex-grow: Controla o crescimento proporcional dos itens.
+    flex-shrink: Controla a redução proporcional dos itens.
+
+    Em muitos casos, essas propriedades são combinadas na propriedade abreviada flex, como em 'flex: 1 2 200px;', onde o valor é, respectivamente, flex-grow, flex-shrink, e flex-basis.
+*/
+
+/*
+    A propriedade 'order' em Flexbox permite alterar a ordem de exibição dos itens dentro do contêiner flexível, independentemente da ordem em que aparecem no código HTML. Ela aceita valores inteiros, onde um valor menor indica que o item deve aparecer primeiro e um valor maior indica que o item deve aparecer mais tarde.
+*/
