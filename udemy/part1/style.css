@@ -10,7 +10,7 @@
 
 div.flex-container {
     /*Display stuff*/
-    display: flex;
+    display: flex; /* block */
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
