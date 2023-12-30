@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+* {
+    /*Box model stuff*/
+    margin: 0;
+    padding: 0;
+    /*Typography stuff*/
+    font-size: 24px;
+    /*Miscellaneous*/
+    box-sizing: border-box;
+}
+
+div.two-columns {
+    /*Display stuff*/
+    display: flex;
+}
+
+div.two-columns div.col {
+    /*Display stuff*/
+    display: flex;
+    flex-direction: column;
+    /*Box model stuff*/
+    margin: 15px;
+    padding: 30px;
+    background-color: lawngreen;
+}
+
+div.two-columns div.col p {
+    /*Box model stuff*/
+    margin-bottom: 24px;
+}
+
+div.gallery {
+    /*Display stuff*/
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div.gallery div.img {
+    /*Display stuff*/
+    flex: 1 0 20%;
+    /*Box model stuff*/
+    height: 50px;
+    margin: 10px;
+    background-color: blue;
+}
