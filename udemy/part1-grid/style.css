@@ -11,10 +11,13 @@
 }
 
 div.grid {
-    max-width: 1200px;
+    /*Display stuff*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /*Box model stuff*/
+    max-width: 1200px;
     margin: auto;
+    /*Miscellaneous*/
     gap: 30px;
 }
 
