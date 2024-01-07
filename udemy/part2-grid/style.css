@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* Grid */
+
+* {
+    /*Box model stuff*/
+    margin: 0;
+    padding: 0;
+    /*Typography stuff*/
+    font: 40px sans-serif;
+    /*Miscellaneous*/
+    box-sizing: border-box;
+}
+
+div.grid {
+    /*Display stuff*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*Box model stuff*/
+    max-width: 1200px;
+    margin: auto;
+    /*Miscellaneous*/
+    gap: 30px;
+}
+
+/*
+div.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    margin: auto;
+    gap: 30px;
+}
+*/
+
+/*
+div.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+    margin: auto;
+    gap: 30px;
+}
+*/
+
+div.grid div {
+    /*Box model stuff*/
+    min-height: 100px;
+    background-color: tomato;
+}
