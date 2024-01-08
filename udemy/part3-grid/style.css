@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* Grid */
+
+* {
+    /*Box model stuff*/
+    margin: 0;
+    padding: 0;
+    /*Typography stuff*/
+    font: 40px sans-serif;
+    /*Miscellaneous*/
+    box-sizing: border-box;
+}
+
+div.grid {
+    /*Display stuff*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    /*Box model stuff*/
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+div.grid div {
+    /*Box model stuff*/
+    min-height: 100px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    background-color: tomato;
+}
+
+div.grid div:nth-child(5) {
+    /*Box model stuff*/
+    background-color: darkred;
+}
