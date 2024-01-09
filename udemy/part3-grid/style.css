@@ -12,13 +12,20 @@
     box-sizing: border-box;
 }
 
+div.container {
+    /*Box model stuff*/
+    max-width: 1200px;
+    margin: 0 auto;
+    /*Miscellaneous*/
+    overflow-x: hidden;
+}
+
 div.grid {
     /*Display stuff*/
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     /*Box model stuff*/
-    max-width: 1200px;
-    margin: 0 auto;
+    margin-right: -30px;
 }
 
 div.grid div {
