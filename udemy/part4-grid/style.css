@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/* Grid */
+
+* {
+    /*Box model stuff*/
+    margin: 0;
+    padding: 0;
+    /*Typography stuff*/
+    font: 40px sans-serif;
+    /*Miscellaneous*/
+    box-sizing: border-box;
+}
+
+div.container {
+    /*Box model stuff*/
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+div.grid {
+    /*Display stuff*/
+    display: grid;
+    grid-template-areas: 'header header' 'nav main' 'rodape rodape';
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 150px 1fr auto;
+}
+
+div.grid div:nth-child(1) {
+    /*Display stuff*/
+    display: flex;
+    grid-area: header;
+    align-items: center;
+    justify-content: space-between;
+    /*Box model stuff*/
+    background-color: red;
+}
+
+div.grid div:nth-child(2) {
+    /*Display stuff*/
+    grid-area: nav;
+    /*Box model stuff*/
+    background-color: yellow;
+}
+
+div.grid div:nth-child(3) {
+    /*Display stuff*/
+    grid-area: main;
+    /*Box model stuff*/
+    background-color: violet;
+}
+
+div.grid div:nth-child(4) {
+    /*Display stuff*/
+    grid-area: rodape;
+    /*Box model stuff*/
+    background-color: turquoise;
+}
+
+@media (max-width: 768px) {
+    div.grid {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-template-areas: 'header' 'main' 'nav' 'rodape';
+    }
+}
